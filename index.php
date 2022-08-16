@@ -157,10 +157,6 @@
                                         <div class="ep"><?= $p["vote_average"]; ?></div>
                                     </div>
                                     <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                        </ul>
                                         <h5><a href="movies.php?id=<?=$p["id"];?>"><?= $p["title"]; ?></a></h5>
                                     </div>
                                 </div>

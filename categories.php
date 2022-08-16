@@ -78,7 +78,6 @@ $dt = $data["genres"];
                     <div class="breadcrumb__links">
                         <a href="./index.html"><i class="fa fa-home"></i> Home</a>
                         <a href="./categories.html">Categories</a>
-                        <span>Romance</span>
                     </div>
                 </div>
             </div>
@@ -103,6 +102,7 @@ $dt = $data["genres"];
                                     <div class="product__page__filter">
                                        <form action="categories.php" method="get"> 
                                          <select name="genre" class="">
+                                            <option>CHOOSE</option>
                                         <?php
                                             foreach($dt as $d){
                                                 echo "<option value=\"".$d["id"]."\">".$d["name"]."</option>";
@@ -127,15 +127,9 @@ $dt = $data["genres"];
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="https://image.tmdb.org/t/p/w500/<?= $g["poster_path"] ?>">
                                         <div class="ep"><?= $g["vote_average"]; ?></div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
                                     </div>
                                     <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                        </ul>
-                                        <h5><a href="#"><?= $g["title"]; ?></a></h5>
+                                        <h5><a href="movies.php?id=<?=$g["id"];?>"><?= $g["title"]; ?></a></h5>
                                     </div>
                                 </div>
                             </div>
