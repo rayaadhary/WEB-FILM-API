@@ -126,9 +126,9 @@
                                     </div>
                                 </div>
                                <!-- streaming -->
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-12 col-xl-12"><iframe src="https://databasegdriveplayer.co/player.php?tmdb=<?=$movies_id?>" title="Streaming Video" scrolling="no" frameborder="0" height="500px" width="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                                    </div>
+                                    </div> -->
                                 </div>
                                   <div class="product__page__title mt-3">
                                     <div class="row">
